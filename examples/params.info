@@ -1,6 +1,0 @@
-Timestep: 500.0 fs
-TAU_T: 50 fs
-TAU_P: 500 fs
-Target temp: 2900 K
-Target pressure: 1 bar
-Init temperature: 3022.99560546875 K
