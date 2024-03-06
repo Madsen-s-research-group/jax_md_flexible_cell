@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "jax_md_flex_extension"
+authors = [
+    {name = "Sebastian Bichelmaier", email = "sebastian.bichelmaier@tuwien.ac.at"},
+    {name = "Jesús Carrete Montaña", email = "jesus.carrete.montana@tuwien.ac.at"}
+]
+description = "An extension for jax_md allowing for flexible cell NpT Molecular Dynamics"
+classifiers = [
+    "Operating System :: OS Independent",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: Apache Software License",
+    "Topic :: Scientific/Engineering :: Chemistry",
+    "Topic :: Scientific/Engineering :: Physics",
+    "Programming Language :: Python :: 3"
+]
+requires-python = ">=3.8"
+dependencies = [
+    "jax-md",
+]
+dynamic = ["version"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.dynamic]
+version = {attr = "jax_md_flex_extension.__version__"}
