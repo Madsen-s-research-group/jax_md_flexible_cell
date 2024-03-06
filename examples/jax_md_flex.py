@@ -20,6 +20,8 @@ import jax.numpy as jnp
 import tqdm
 from tqdm.auto import tqdm
 
+jax.config.update("jax_enable_x64", True)
+
 from neuralil.bessel_descriptors import (
     PowerSpectrumGenerator,
 )
